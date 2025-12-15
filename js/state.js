@@ -1,0 +1,21 @@
+
+window.state={
+ area:"meadow",
+ sim:{
+  pos:{x:0,z:0},
+  speed:0.12,
+  needs:{hunger:80,energy:80,social:60},
+  level:1,xp:0,xpToNext:100,
+  skills:{
+   combat:{level:1,xp:0,perks:{}},
+   mining:{level:1,xp:0,perks:{}},
+   woodcutting:{level:1,xp:0,perks:{}},
+   foraging:{level:1,xp:0,perks:{}},
+   crafting:{level:1,xp:0,perks:{}}
+  },
+  weaponMastery:{fists:1,sword:1,mace:1,bow:1},
+  inventory:{wood:0,stone:0,iron:0},
+  equipment:{main:"fists"}
+ },
+ world:{objects:[],enemies:[]}
+};

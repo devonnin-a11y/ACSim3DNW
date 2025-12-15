@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>IslandSim 3D v10</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="ui-top">
+  <span id="area">🌿 Meadow</span>
+  <div id="player-level">Lv 1</div>
+  <button onclick="togglePhone()">📱</button>
+</div>
+
+<div id="needs-panel">
+  <div>🍽 <span id="need-hunger"></span></div>
+  <div>⚡ <span id="need-energy"></span></div>
+  <div>💬 <span id="need-social"></span></div>
+</div>
+
+<canvas id="minimap" width="120" height="120"></canvas>
+
+<div id="ui-bottom">
+  <div id="dpad">
+    <button data-dir="up">⬆</button>
+    <div>
+      <button data-dir="left">⬅</button>
+      <button data-dir="down">⬇</button>
+      <button data-dir="right">➡</button>
+    </div>
+  </div>
+</div>
+
+<div id="overlay" onclick="closeAllPanels()"></div>
+
+<div id="phone" class="sheet">
+  <div class="sheet-card">
+    <h3>📱 NookPhone</h3>
+    <button onclick="toggleInventory()">🎒 Inventory</button>
+    <button onclick="toggleEquipment()">⚔️ Equipment</button>
+    <button onclick="toggleSkills()">🌳 Skills</button>
+    <button onclick="togglePerks()">✨ Perks</button>
+    <button onclick="toggleJournal()">📖 Journal</button>
+    <button onclick="togglePhone()">Close</button>
+  </div>
+</div>
+
+<div id="inventory" class="panel"></div>
+<div id="equipment" class="panel"></div>
+<div id="skills" class="panel"></div>
+<div id="perks" class="panel"></div>
+<div id="journal" class="panel"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.159.0/build/three.min.js"></script>
+<script src="js/state.js"></script>
+<script src="js/xp.js"></script>
+<script src="js/perks.js"></script>
+<script src="js/weapons.js"></script>
+<script src="js/enemies.js"></script>
+<script src="js/combat.js"></script>
+<script src="js/resources.js"></script>
+<script src="js/character.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/input.js"></script>
+<script src="js/three.js"></script>
+<script src="js/game.js"></script>
+</body>
+</html>
